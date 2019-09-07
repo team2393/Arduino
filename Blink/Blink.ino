@@ -15,6 +15,8 @@
        100          100        Faster on/off
         50         1000        Short 'blip' with 1 second pause
          1           10        What's happening?
+
+  Next, see "MultiBlink" example for controlling 2 LEDs
 */
 
 // the setup function runs once when you press reset or power the board
