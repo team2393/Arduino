@@ -6,6 +6,10 @@
   Add a second LED to "pin 12".
 
   TODO: Understand what's happening in the loop()!
+
+  TODO: Change timing
+  Make LED1 to blink every 2 seconds,
+  and LED2 blink every 50ms. 
 */
 
 int LED1 = LED_BUILTIN;
