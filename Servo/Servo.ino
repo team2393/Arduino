@@ -10,12 +10,12 @@
    Or do we only get to almost 180?
 
    TODO: Change the stepping.
-   Command the servo to -90, 0, 90, 0, -90, 0, 90, ...,
+   Command the servo to 0, 90, 180, 90, 0, 90, 180, ...,
    waiting 2 seconds at each position.
-   Do NOT step -90, -89, -88, ..., 0 but directly command
-   the servo to go to -90, pause, 0, pause, ...
+   Do NOT step 0, 1, 2, ..., 89, 90 but directly command
+   the servo to go to 90, pause, 180, pause, ...
    to see how fast the servo can reach a setpoint.
-*/
+ */
 
 // Get servo library, create servo object
 #include <Servo.h>
