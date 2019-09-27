@@ -8,10 +8,12 @@ Arduinos are comparably cheap and fun to play with,
 for example in hobby projects.
 Some teams add one or more Arduinos to their robot, for example to control lights.
 
+![Arduino](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arduino_Uno_-_R3.jpg/440px-Arduino_Uno_-_R3.jpg)
+
 Development Environment
 -----------------------
 
-Download the "Arduino IDE" from https://www.arduino.cc/en/main/software
+Download the "Arduino IDE" from https://www.arduino.cc/en/main/software .
 For Windows, we suggest you download the "Installer",
 which is a file like `arduino-1.8.9-windows.exe`,
 and not the "App" from the Microsoft store.
@@ -41,7 +43,7 @@ git clone https://github.com/team2393/Arduino
 ```
 
 When you now start the Arduino IDE, use `File`, `Open`,
-navigate to the `git/Arduino` folder in your home diretory,
+navigate to the `git/Arduino` folder in your home directory,
 and for example open `Blink/Blink.ino`.
 
 Totally irrelevant but fun fact regarding `bash`:
