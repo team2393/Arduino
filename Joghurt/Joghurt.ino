@@ -23,13 +23,13 @@ void setup()
 }
 
 // Desired temperature
-static double setpoint = 30.0;
+static double setpoint = 39.0;
 
 // Allowance above/below setpoint
 // to keep relay from chattering near setpoint
-static double hysteresis = 3.0;
+static double hysteresis = 0.5;
 
-static double smooth_celsius = 25.0;
+static double smooth_celsius = setpoint;
 static bool on = false;
 
 void loop()
@@ -38,10 +38,11 @@ void loop()
   double celsius = volt * 100.0;
   smooth_celsius = smooth_celsius * 0.9  + celsius * 0.1;
   Serial.print(smooth_celsius);
-  Serial.print("\t");
-  Serial.println(on ? 1 : 0);
+//  Serial.print("\t");
+//  Serial.print(on ? 1 : 0);
+  Serial.println();
 
-  if (on  &&  smooth_celsius > setpoint + hysteresis)
+  if (on  &&  smooth_celsius > setpoint)
   {
     on = false;
     digitalWrite(RELAY, LOW);
@@ -50,5 +51,6 @@ void loop()
   {
     on = true;
     digitalWrite(RELAY, HIGH);
-  }  
+  }
+  delay(500);
 }
